@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <script src="./assetLogin.js"></script>
+    <style>
+        .bg-img-cls {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .full-height-cls {
+            height: 100%;
+        }
+
+        .login-form-div-cls {
+            padding-top: 9%;
+        }
+
+        .login-form-cls {
+            padding: 10px;
+            border-radius: 9px;
+        }
+
+        .toggle.ios,
+        .toggle-on.ios,
+        .toggle-off.ios {
+            margin-top: 8px;
+            height: 10px !important;
+        }
+
+        .toggle.ios .toggle-handle {
+            border-radius: 20rem;
+        }
+
+        .bg-warning {
+            color: white !important;
+            background-color: #0f6953 !important;
+            border-color: #0f6953;
+        }
+
+        .btn-warning {
+            color: white !important;
+            background-color: #0f6953 !important;
+            border-color: #0f6953;
+        }
+    </style>
+</head>
+
+<body style="height: 100%;font-family: fangsong;">
+    <div class="col-md-12 p-0 bg-img-cls full-height-cls d-flex justify-content-center"
+        style="background-image: url(backgroundImg.jpg) ;">
+        <div class="col-md-4 login-form-div-cls">
+
+            <form class="shadow login-form-cls" style="background-color: #ecebf157;">
+                <!-- <div class="col-md-12" style="text-align: center;">
+                    <img src="./logo.jpg" style="width: 150px; height: 100px;">
+                </div> -->
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usernameId" placeholder="User Name">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="pwdId" placeholder="Password" name="pswd">
+                </div>
+                <button type="button" class="btn btn-warning btn-block text-white" onclick="loginUser()">Login</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
