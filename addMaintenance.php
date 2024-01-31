@@ -19,6 +19,7 @@ $serviceDate = $postData["serviceDate"];
 $serviceDetails = $postData["serviceDetails"];
 
 // Adding A Maintenance Data
+// Adding A Maintenance Data
 $sql = "INSERT INTO assetmaintenance (assetName, cost, serviceDate , serviceDetails) 
 		VALUES ('$assetName', '$cost', '$serviceDate', '$serviceDetails');";
 
