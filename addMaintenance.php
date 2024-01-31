@@ -10,16 +10,15 @@ if ($con->connect_error) {
     die("Connection Failed: " . $con->connect_error);
 }
 // Selecting DB
-// aSelecting DB
 mysqli_select_db($con,$dbname);
-// Getting values from the Form
+
+// Getting values from the form
 $postData = json_decode(file_get_contents("php://input"), true);
 $assetName = $postData["assetName"];
 $cost = $postData["cost"];
 $serviceDate = $postData["serviceDate"];
 $serviceDetails = $postData["serviceDetails"];
 
-// Adding A Maintenance Data
 // Adding A Maintenance Data
 $sql = "INSERT INTO assetmaintenance (assetName, cost, serviceDate , serviceDetails) 
 		VALUES ('$assetName', '$cost', '$serviceDate', '$serviceDetails');";
