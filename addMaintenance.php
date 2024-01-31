@@ -6,7 +6,6 @@ $dbname = "deptasstmgmt"; // DB Name which is created in MySQL
 //Try to connect
 $con = new mysqli($mysql_host, $mysql_user, $mysql_password);
 // Check connection
-// check connection
 if ($con->connect_error) {
     die("Connection Failed: " . $con->connect_error);
 }
