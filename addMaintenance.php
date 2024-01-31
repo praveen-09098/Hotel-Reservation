@@ -10,6 +10,7 @@ if ($con->connect_error) {
     die("Connection Failed: " . $con->connect_error);
 }
 // Selecting DB
+// aSelecting DB
 mysqli_select_db($con,$dbname);
 // Getting values from the Form
 $postData = json_decode(file_get_contents("php://input"), true);
