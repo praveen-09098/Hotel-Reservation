@@ -11,6 +11,7 @@ if ($con->connect_error) {
     die("Connection Failed: " . $con->connect_error);
 }
 // Selecting DB
+// Selecting DB
 mysqli_select_db($con,$dbname);
 
 //Getting all Asset details
